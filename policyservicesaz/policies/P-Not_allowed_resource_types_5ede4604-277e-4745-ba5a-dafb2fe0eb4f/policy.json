@@ -1,0 +1,37 @@
+{
+ "properties": {
+  "displayName": "P-Not allowed resource types",
+  "policyType": "Custom",
+  "mode": "All",
+  "description": "This policy enables you to specify the resource types that your organization cannot deploy.",
+  "metadata": {
+   "category": "General",
+   "createdBy": "f27b6dfd-2a36-4ff1-be29-69deeac47e6f",
+   "createdOn": "2020-11-18T20:03:43.5241294Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {
+   "listOfResourceTypesNotAllowed": {
+    "type": "Array",
+    "metadata": {
+     "displayName": "Not allowed resource types",
+     "description": "The list of resource types that cannot be deployed.",
+     "strongType": "resourceTypes"
+    }
+   }
+  },
+  "policyRule": {
+   "if": {
+    "field": "type",
+    "in": "[parameters('listOfResourceTypesNotAllowed')]"
+   },
+   "then": {
+    "effect": "Deny"
+   }
+  }
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/CompanyIT/providers/Microsoft.Authorization/policyDefinitions/5ede4604-277e-4745-ba5a-dafb2fe0eb4f",
+ "type": "Microsoft.Authorization/policyDefinitions",
+ "name": "5ede4604-277e-4745-ba5a-dafb2fe0eb4f"
+}
