@@ -12,8 +12,7 @@
    "listOfAllowedSKUs": {
     "value": [
      "basic_a3",
-     "basic_a4",
-     "basic_a2"
+     "basic_a4"
     ]
    }
   },
