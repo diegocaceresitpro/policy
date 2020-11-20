@@ -1,0 +1,42 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "P-Allowed virtual machine size SKUs-assignment",
+  "policyDefinitionId": "/subscriptions/86ed1f6f-8178-4509-bf13-33ed7b911312/providers/Microsoft.Authorization/policyDefinitions/2a5abffd-af11-4a27-b0e8-8ef31089423d",
+  "scope": "/subscriptions/86ed1f6f-8178-4509-bf13-33ed7b911312",
+  "notScopes": [],
+  "parameters": {
+   "listOfAllowedSKUs": {
+    "value": [
+     "basic_a3",
+     "basic_a4",
+     "basic_a2"
+    ]
+   }
+  },
+  "metadata": {
+   "assignedBy": "Diego Cáceres",
+   "parameterScopes": {
+    "listOfAllowedSKUs": "/subscriptions/86ed1f6f-8178-4509-bf13-33ed7b911312"
+   },
+   "createdBy": "f27b6dfd-2a36-4ff1-be29-69deeac47e6f",
+   "createdOn": "2020-11-18T22:30:03.6456503Z",
+   "updatedBy": "daefe0c0-9fca-4e2f-8840-6c6f88de24f3",
+   "updatedOn": "2020-11-18T22:57:13.1764307Z",
+   "gitHubPolicy": {
+    "digest": "c6a1b3c997740868f41a61aaca730dc5b4d05907",
+    "repoName": "diegocaceresitpro/policy",
+    "commitSha": "a03e416262ceee12e9091b3667121ebd917e9644",
+    "runUrl": "https://github.com/diegocaceresitpro/policy/actions/runs/371190180",
+    "filepath": "skus/policies/P-Allowed_virtual_machine_size_SKUs_2a5abffd-af11-4a27-b0e8-8ef31089423d/assign.P-Allowed_virtual_machine_size_SKUs-assignment_c6a1aad91e894188b0e3141e.json"
+   }
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/86ed1f6f-8178-4509-bf13-33ed7b911312/providers/Microsoft.Authorization/policyAssignments/c6a1aad91e894188b0e3141e",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "c6a1aad91e894188b0e3141e"
+}
